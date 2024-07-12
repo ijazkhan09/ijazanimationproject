@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/bg1.jpg);
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: car 20s linear infinite;
+    animation-direction: reverse;
+}
+.orbit{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: car 20s linear infinite;
+}
+@keyframes car {
+    100%{
+        transform: translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
+.img{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: -50px;
+    transform: rotate(-40deg);
+}
